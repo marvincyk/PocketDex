@@ -1,12 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { SafeAreaView } from "react-native";
 import tw from "twrnc";
+import SearchBar from "./components/SearchBar";
 
 export default function App() {
   return (
-    <View style={tw`flex bg-white items-center justify-center h-full w-full`}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <SafeAreaView
+      style={tw`flex bg-white items-center justify-center h-full w-full`}
+    >
+      <SearchBar />
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
