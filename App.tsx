@@ -10,9 +10,7 @@ export default function App() {
       style={tw`flex bg-white items-center justify-center h-full w-full`}
     >
       <SearchBar />
-      <View
-        style={tw`flex flex-row flex-wrap w-4/5 content-center justify-around`}
-      >
+      <View style={tw`flex flex-row flex-wrap w-4/5 justify-around mt-10`}>
         <Card
           image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
           name="Bulbasaur"

@@ -9,12 +9,12 @@ interface CardProps {
 
 const Card = ({ image, name }: CardProps) => {
   return (
-    <View style={tw`w-1/3 h-1/4 flex items-center justify-center m-2`}>
+    <View style={tw`w-1/3 flex items-center justify-center m-2`}>
       <Image
         source={{
           uri: image,
         }}
-        style={tw`w-1/2 h-1/2`}
+        style={tw`w-20 h-20`}
       />
       <Text>{name}</Text>
     </View>
