@@ -16,7 +16,7 @@ const TouchableCard = ({ image, name }: TouchableCardProps) => {
         }}
         style={tw`w-20 h-20`}
       />
-      <Text>{name}</Text>
+      <Text style={tw`font-semibold`}>{name}</Text>
     </TouchableOpacity>
   );
 };
