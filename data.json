@@ -29,6 +29,36 @@
       "id": 6,
       "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png",
       "name": "Charizard"
+    },
+    {
+      "id": 7,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
+      "name": "Squirtle"
+    },
+    {
+      "id": 8,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png",
+      "name": "Wartortle"
+    },
+    {
+      "id": 9,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png",
+      "name": "Blastoise"
+    },
+    {
+      "id": 10,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png",
+      "name": "Caterpie"
+    },
+    {
+      "id": 11,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png",
+      "name": "Metapod"
+    },
+    {
+      "id": 12,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png",
+      "name": "Butterfree"
     }
   ]
 }
