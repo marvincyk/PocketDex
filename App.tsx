@@ -6,6 +6,7 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
   FlatList,
+  Image,
 } from "react-native";
 import tw from "twrnc";
 import TouchableCard from "./components/TouchableCard";
@@ -24,6 +25,12 @@ export default function App() {
       <SafeAreaView
         style={tw`flex bg-white items-center justify-center h-full w-full`}
       >
+        <Image
+          source={{
+            uri: "https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png",
+          }}
+          style={tw`w-4/5 h-1/5 mb-8`}
+        />
         <SearchBar
           onChangeText={handleChangeText}
           placeholder="Search for a Pokémon"
