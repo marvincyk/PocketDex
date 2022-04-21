@@ -9,9 +9,7 @@ interface TouchableCardProps {
 
 const TouchableCard = ({ image, name }: TouchableCardProps) => {
   return (
-    <TouchableOpacity
-      style={tw`w-1/3 flex items-center justify-center m-2 pb-1`}
-    >
+    <TouchableOpacity style={tw`w-1/3 flex items-center justify-center mb-10`}>
       <Image
         source={{
           uri: image,

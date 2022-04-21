@@ -5,6 +5,7 @@ import {
   View,
   Keyboard,
   TouchableWithoutFeedback,
+  FlatList,
 } from "react-native";
 import tw from "twrnc";
 import TouchableCard from "./components/TouchableCard";
@@ -28,23 +29,26 @@ export default function App() {
           placeholder="Search for a Pokémon"
           search={search}
         />
-        <View style={tw`flex flex-row flex-wrap w-4/5 justify-around mt-6`}>
-          {data.pokemon
-            .filter((pokemon) => {
+        <View style={tw`w-4/5 h-2/3 mt-10`}>
+          <FlatList
+            data={data.pokemon.filter((pokemon) => {
               if (
                 search == "" ||
                 pokemon.name.toLowerCase().includes(search.toLowerCase())
               ) {
                 return pokemon;
               }
-            })
-            .map((pokemon) => (
+            })}
+            renderItem={({ item }) => (
               <TouchableCard
-                image={pokemon.image}
-                name={pokemon.name}
-                key={pokemon.id}
+                image={item.image}
+                name={item.name}
+                key={item.id}
               />
-            ))}
+            )}
+            numColumns={3}
+            initialNumToRender={12}
+          />
         </View>
         <StatusBar style="auto" />
       </SafeAreaView>

@@ -59,6 +59,66 @@
       "id": 12,
       "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png",
       "name": "Butterfree"
+    },
+    {
+      "id": 13,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png",
+      "name": "Weedle"
+    },
+    {
+      "id": 14,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png",
+      "name": "Kakuna"
+    },
+    {
+      "id": 15,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png",
+      "name": "Beedrill"
+    },
+    {
+      "id": 16,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png",
+      "name": "Pidgey"
+    },
+    {
+      "id": 17,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png",
+      "name": "Pidgeotto"
+    },
+    {
+      "id": 18,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/018.png",
+      "name": "Pidgeot"
+    },
+    {
+      "id": 19,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png",
+      "name": "Rattata"
+    },
+    {
+      "id": 20,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png",
+      "name": "Raticate"
+    },
+    {
+      "id": 21,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png",
+      "name": "Spearow"
+    },
+    {
+      "id": 22,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/022.png",
+      "name": "Fearow"
+    },
+    {
+      "id": 23,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png",
+      "name": "Ekans"
+    },
+    {
+      "id": 24,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/024.png",
+      "name": "Arbok"
     }
   ]
 }
