@@ -7,7 +7,7 @@ import {
   TouchableWithoutFeedback,
 } from "react-native";
 import tw from "twrnc";
-import Card from "./components/Card";
+import TouchableCard from "./components/TouchableCard";
 import SearchBar from "./components/SearchBar";
 import data from "./data.json";
 
@@ -28,7 +28,7 @@ export default function App() {
           placeholder="Search for a Pokémon"
           search={search}
         />
-        <View style={tw`flex flex-row flex-wrap w-4/5 justify-around mt-10`}>
+        <View style={tw`flex flex-row flex-wrap w-4/5 justify-around mt-6`}>
           {data.pokemon
             .filter((pokemon) => {
               if (
@@ -39,7 +39,7 @@ export default function App() {
               }
             })
             .map((pokemon) => (
-              <Card
+              <TouchableCard
                 image={pokemon.image}
                 name={pokemon.name}
                 key={pokemon.id}
