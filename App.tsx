@@ -3,6 +3,7 @@ import { SafeAreaView, View } from "react-native";
 import tw from "twrnc";
 import Card from "./components/Card";
 import SearchBar from "./components/SearchBar";
+import data from "./data.json";
 
 export default function App() {
   return (
@@ -11,30 +12,9 @@ export default function App() {
     >
       <SearchBar />
       <View style={tw`flex flex-row flex-wrap w-4/5 justify-around mt-10`}>
-        <Card
-          image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
-          name="Bulbasaur"
-        />
-        <Card
-          image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png"
-          name="Ivysaur"
-        />
-        <Card
-          image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png"
-          name="Venusaur"
-        />
-        <Card
-          image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"
-          name="Charmander"
-        />
-        <Card
-          image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png"
-          name="Charmeleon"
-        />
-        <Card
-          image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png"
-          name="Charizard"
-        />
+        {data.pokemon.map((pokemon) => (
+          <Card image={pokemon.image} name={pokemon.name} key={pokemon.id} />
+        ))}
       </View>
       <StatusBar style="auto" />
     </SafeAreaView>
