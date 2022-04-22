@@ -12,6 +12,7 @@ import tw from "twrnc";
 import { APIResource, Pokemon, PokemonClient } from "pokenode-ts";
 import TouchableCard from "./components/TouchableCard";
 import SearchBar from "./components/SearchBar";
+import PokemonLogo from "./components/PokemonLogo";
 
 export default function App() {
   const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
@@ -49,12 +50,7 @@ export default function App() {
       <SafeAreaView
         style={tw`flex bg-white items-center justify-center h-full w-full`}
       >
-        <Image
-          source={{
-            uri: "https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png",
-          }}
-          style={tw`w-4/5 h-1/5 mb-8`}
-        />
+        <PokemonLogo />
         <SearchBar
           onChangeText={handleChangeText}
           placeholder="Search for a Pokémon"
