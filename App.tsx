@@ -9,22 +9,24 @@ import {
   Image,
 } from "react-native";
 import tw from "twrnc";
+import { APIResource, Pokemon, PokemonClient } from "pokenode-ts";
 import TouchableCard from "./components/TouchableCard";
 import SearchBar from "./components/SearchBar";
 
 export default function App() {
-  const [pokemonList, setPokemonList] = useState<any[]>([]);
+  const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     const getPokemonList = async () => {
-      fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
-        .then((response) => response.json())
+      const api = new PokemonClient();
+      await api
+        .listPokemons(0, 151)
         .then((data) => data.results)
         .then(async (results) => {
           setPokemonList(
             await Promise.all(
-              results.map(async (result: { name: string; url: string }) => {
+              results.map(async (result: APIResource) => {
                 return fetch(result.url).then((response) => response.json());
               })
             )
@@ -71,7 +73,7 @@ export default function App() {
               })}
               renderItem={({ item }) => (
                 <TouchableCard
-                  image={item.sprites.front_default}
+                  image={item.sprites.front_default!}
                   name={capitalise(item.name)}
                   key={item.id}
                 />
